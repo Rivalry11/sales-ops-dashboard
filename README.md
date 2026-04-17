@@ -1,6 +1,6 @@
 # 📊 Sales Operations Analytics Dashboard
 
-> **Live demo:** [Link to Streamlit app — add after deploy]
+> **Live demo:** (https://camila-sales-ops.streamlit.app/)
 
 An interactive analytics dashboard that helps operations and business intelligence teams track sales performance against forecast, identify regional and channel trends, and surface operational opportunities.
 
