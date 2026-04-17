@@ -50,9 +50,10 @@ st.markdown("""
 @st.cache_data
 def load_data():
     # Auto-generate data if not present (for Streamlit Cloud deploy)
-    import os, subprocess
+    import os
     if not os.path.exists("data/sales_data.csv"):
-        subprocess.run(["python", "generate_data.py"], check=True)
+        from generate_data import main as generate_main
+        generate_main()
     df = pd.read_csv("data/sales_data.csv")
     df["date"] = pd.to_datetime(df["date"])
     df["month"] = df["date"].dt.to_period("M").astype(str)
